@@ -82,10 +82,10 @@
 
 .__cover-button-wrapper-btn {
     border-radius: 4px;
-    background: #2B7CD3;
+    background: #014f86;
     white-space: nowrap;
     padding: 14px 48px;
-    color: #010606;
+    color: #fff;
     font-size: 16px;
     outline: none;
     border: none;
@@ -98,7 +98,7 @@
 
 .__cover-button-wrapper-btn:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #010606;
 }
 
 @media screen and (max-width: 768px) {
