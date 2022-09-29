@@ -9,6 +9,9 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { CoverComponent } from './shared/components/cover/cover.component';
 import { ButtonComponent } from './shared/components/shared/button/button.component';
+import { AboutComponent } from './shared/components/about/about.component';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { ServicesComponent } from './shared/components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { ButtonComponent } from './shared/components/shared/button/button.compon
     NavbarComponent,
     FooterComponent,
     CoverComponent,
-    ButtonComponent
+    ButtonComponent,
+    AboutComponent,
+    SidebarComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

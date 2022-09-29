@@ -5,18 +5,18 @@
 
         </div>
         <ul class="__navbar-menu">
-            <li class="navbar-menu-item">
-                <a routerLink="about" class="__navbar-link">About</a>
+            <li class="navbar-menu-item" (click)="goToScroller('about-jump')">
+                <a  class="__navbar-link">About</a>
             </li>
-            <li class="navbar-menu-item">
-                <a routerLink="skills" class="__navbar-link">Skills</a>
+            <li class="navbar-menu-item" (click)="goToScroller('skills-jump')">
+                <a class="__navbar-link">Skills</a>
             </li>
-            <li class="navbar-menu-item">
-                <a routerLink="projects" class="__navbar-link">Projects</a>
+            <li class="navbar-menu-item" (click)="goToScroller('projects-jump')">
+                <a class="__navbar-link">Projects</a>
             </li>
         </ul>
         <nav class="__navbar-navbtn">
-            <a href="" class="__navbar-navbtn-link">Resume</a>
+            <a href="#" class="__navbar-navbtn-link">Resume</a>
         </nav>
     </div>
 </nav>

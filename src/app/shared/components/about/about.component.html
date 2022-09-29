@@ -1,0 +1,23 @@
+
+<div [id]="data?.id" class="__about-container">
+    <div class="__about-wrapper">
+        <div class="__about-row">
+            <div class="__about-column-primary">
+                <div class="__about-text-wrapper">
+                    <p class="__about-topLine">{{ data?.topLine }}</p>
+                    <h1 class="__about-h1">{{ data?.headline }}</h1>
+                    <p class="__about-subtitle">{{ data?.description }}</p>
+                    <div class="__about-button-wrapper">
+                        <app-button [title]="data ? data.buttonLabel: 'Button'"></app-button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="__about-column-secondary">
+                <div class="__about-image-wrapper">
+                    <img [src]="data?.img" [alt]="data?.imgAlt" class="__about-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

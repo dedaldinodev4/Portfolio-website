@@ -1,10 +1,10 @@
 .__btn {
     border-radius: 4px;
-    background: '#2B7CD3';
+    background: #2B7CD3;
     white-space: nowrap;
-    padding: '12px 30px';
-    color: '#010606';
-    font-size: '16px';
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 16px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -16,5 +16,5 @@
 
 .__btn:hover {
     transition: all 0.2s ease-in-out;
-    background: '#fff';
+    background: #010606;
 }
