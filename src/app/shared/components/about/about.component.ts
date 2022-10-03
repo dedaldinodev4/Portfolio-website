@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IAbout } from '../../dtos';
+import { skills, skills_info } from '../../data';
+import { IAbout, ISkill } from '../../dtos';
 
 @Component({
   selector: 'app-about',
@@ -9,6 +10,9 @@ import { IAbout } from '../../dtos';
 export class AboutComponent implements OnInit {
 
   @Input() data?:IAbout;
+  skills: ISkill[] = skills;
+  skill_info: IAbout = skills_info
+
   constructor() { }
 
   ngOnInit(): void {

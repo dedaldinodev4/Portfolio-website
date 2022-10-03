@@ -1,22 +1,26 @@
-<nav class="__navbar-nav">
+<nav class="__navbar-nav" [style.background]="scrollNav ? '#000': 'transparent'">
     <div class="__navbar-container">
         <a href="#" class="__navbar-logo">Dev 001</a>
         <div class="__navbar-menuIcon">
 
         </div>
         <ul class="__navbar-menu">
+            <li class="navbar-menu-item">
+                <a href="#" class="__navbar-link">Home</a>
+            </li>
             <li class="navbar-menu-item" (click)="goToScroller('about-jump')">
                 <a  class="__navbar-link">About</a>
             </li>
-            <li class="navbar-menu-item" (click)="goToScroller('skills-jump')">
-                <a class="__navbar-link">Skills</a>
+            
+            <li class="navbar-menu-item" (click)="goToScroller('services-jump')">
+                <a  class="__navbar-link">Services</a>
             </li>
-            <li class="navbar-menu-item" (click)="goToScroller('projects-jump')">
-                <a class="__navbar-link">Projects</a>
+            <li class="navbar-menu-item" (click)="goToScroller('portfolio-jump')">
+                <a class="__navbar-link">Portfolio</a>
+            </li>
+            <li class="navbar-menu-item" (click)="goToScroller('contact-jump')">
+                <a class="__navbar-link">Conctat</a>
             </li>
         </ul>
-        <nav class="__navbar-navbtn">
-            <a href="#" class="__navbar-navbtn-link">Resume</a>
-        </nav>
     </div>
 </nav>

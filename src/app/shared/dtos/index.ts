@@ -8,4 +8,11 @@ export interface IAbout {
     buttonLabel: string;
     img: string;
     imgAlt: string;
+    backgroundColor?: string;
+}
+
+export interface ISkill {
+    id?: string;
+    title: string;
+    value: string;
 }

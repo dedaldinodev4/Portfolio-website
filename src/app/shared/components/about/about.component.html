@@ -1,5 +1,5 @@
 
-<div [id]="data?.id" class="__about-container">
+<div [id]="data?.id" class="__about-container" [style.background-color]="data?.backgroundColor">
     <div class="__about-wrapper">
         <div class="__about-row">
             <div class="__about-column-primary">
@@ -19,5 +19,33 @@
                 </div>
             </div>
         </div>
+    </div>
+        <div class="__skill-wrapper">
+            <div class="__skill-row">
+                
+                <div class="__skill-column-primary">
+                    <div *ngFor="let s of skills" [id]="s?.id" class="__skill-image-wrapper">
+                        <h5>{{ s?.title}}</h5>
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [style.width]="s.value">
+                                <span class="sr-only"> {{ s?.value }} Complecto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="__skill-column-primary">
+                    <div class="__skill-text-wrapper">
+                        <p class="__skill-topLine">{{ skill_info.topLine }}</p>
+                        <h1 class="__skill-h1">{{ skill_info.headline }}</h1>
+                        <div class="__skill-button-wrapper">
+                            <app-button [title]="data ? skill_info.buttonLabel: 'Button'"></app-button>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+        
     </div>
 </div>

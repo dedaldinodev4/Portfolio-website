@@ -1,0 +1,23 @@
+
+<div [id]="datas?.id" class="__intro-container" [style.background-color]="datas?.backgroundColor">
+    <div class="__intro-wrapper">
+        <div class="__intro-row">
+            <div class="__intro-column-primary">
+                <div class="__intro-text-wrapper">
+                    <p class="__intro-topLine">{{ datas?.topLine }}</p>
+                    <h1 class="__intro-h1">I am <span>{{ datas?.headline }}</span> </h1>
+                    <p class="__intro-subtitle">{{ datas?.description }}</p>
+                    <div class="__intro-button-wrapper">
+                        <app-button [title]="datas ? datas.buttonLabel: 'Button'"></app-button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="__intro-column-secondary">
+                <div class="__intro-image-wrapper">
+                    <img [src]="datas?.img" [alt]="datas?.imgAlt" class="__intro-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
