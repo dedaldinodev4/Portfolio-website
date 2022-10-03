@@ -20,11 +20,11 @@
             </div>
         </div>
     </div>
-        <div class="__skill-wrapper">
-            <div class="__skill-row">
+        <div class="__about-wrapper">
+            <div class="__about-row">
                 
-                <div class="__skill-column-primary">
-                    <div *ngFor="let s of skills" [id]="s?.id" class="__skill-image-wrapper">
+                <div class="__about-column-primary">
+                    <div *ngFor="let s of skills" [id]="s?.id" class="__about-image-wrapper">
                         <h5>{{ s?.title}}</h5>
                         <div class="progress progress-striped">
                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [style.width]="s.value">
@@ -34,11 +34,11 @@
                     </div>
                 </div>
                 
-                <div class="__skill-column-primary">
-                    <div class="__skill-text-wrapper">
-                        <p class="__skill-topLine">{{ skill_info.topLine }}</p>
-                        <h1 class="__skill-h1">{{ skill_info.headline }}</h1>
-                        <div class="__skill-button-wrapper">
+                <div class="__about-column-primary">
+                    <div class="__about-text-wrapper">
+                        <p class="__about-topLine">{{ skill_info.topLine }}</p>
+                        <h1 class="__about-h1">{{ skill_info.headline }}</h1>
+                        <div class="__about-button-wrapper">
                             <app-button [title]="data ? skill_info.buttonLabel: 'Button'"></app-button>
                         </div>
                     </div>
