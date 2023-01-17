@@ -9,7 +9,8 @@ import { datas } from 'src/app/shared/data';
 })
 export class HomeComponent implements OnInit {
 
-  datas: IAbout[] = datas
+  intro_datas: IAbout = datas.intro;
+  about_datas: IAbout = datas.about;
 
   constructor() {}
 

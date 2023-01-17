@@ -1,5 +1,8 @@
 import { IAbout, ISkill } from "../dtos"
-
+interface IProps {
+    intro: IAbout,
+    about: IAbout
+}
 
 
 export const skills: ISkill[] = [
@@ -41,18 +44,18 @@ export const skills_info: IAbout = {
     backgroundColor: '#020109'
 }
  
-export const datas: IAbout[] = [
-    {
+export const datas: IProps = {
+    intro: {
         id: 'intro-jump',
-        topLine: 'Hello',
-        headline: 'Daniel Manuel',
-        description: `UI/UX Design | Software Developer`,
+        topLine: 'Stack D3',
+        headline: 'Dedaldino Daniel',
+        description: `Front-end | Mobile | Back-end`,
         img: '/assets/images/01.png',
         imgAlt: 'about',
-        buttonLabel: 'Get Resume',
+        buttonLabel: 'Baixar CV',
         backgroundColor: '#020109'
     },
-    {
+    about: {
         id: 'about-jump',
         topLine: 'Dev 001',
         headline: 'Let´s Introduce About Myself',
@@ -68,4 +71,4 @@ export const datas: IAbout[] = [
         buttonLabel: 'Download Resume',
         backgroundColor: '#010606'
     }
-]
+}
